@@ -1,0 +1,29 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "trabajo",
+            "otherEntityName": "trabajo",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "planificacion"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "fecha",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20160601174523",
+    "dto": "no",
+    "service": "no",
+    "pagination": "no"
+}

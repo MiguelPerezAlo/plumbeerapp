@@ -1,0 +1,27 @@
+{
+    "plumbeerappApp": {
+        "mensaje" : {
+            "home": {
+                "title": "Mensajes",
+                "createLabel": "Créer un nouveau Mensaje",
+                "createOrEditLabel": "Créer ou éditer un Mensaje",
+                "search": "Search for Mensaje"
+            },
+            "created": "Un nouveau Mensaje a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Mensaje avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Mensaje avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Mensaje {{ id }} ?"
+            },
+            "detail": {
+                "title": "Mensaje"
+            },
+            "titulo": "Titulo",
+            "cuerpo": "Cuerpo",
+            "fecha": "Fecha",
+            "receptor": "Receptor",
+            "emisor": "Emisor"
+        }
+    }
+}
+

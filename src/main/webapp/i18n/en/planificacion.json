@@ -1,0 +1,24 @@
+{
+    "plumbeerappApp": {
+        "planificacion" : {
+            "home": {
+                "title": "Planificacions",
+                "createLabel": "Create a new Planificacion",
+                "createOrEditLabel": "Create or edit a Planificacion",
+                "search": "Search for Planificacion"
+            },
+            "created": "A new Planificacion is created with identifier {{ param }}",
+            "updated": "A Planificacion is updated with identifier {{ param }}",
+            "deleted": "A Planificacion is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Planificacion {{ id }}?"
+            },
+            "detail": {
+                "title": "Planificacion"
+            },
+            "fecha": "Fecha",
+            "user": "User",
+            "trabajo": "Trabajo"
+        }
+    }
+}
