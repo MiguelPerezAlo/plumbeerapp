@@ -1,0 +1,28 @@
+{
+    "plumbeerappApp": {
+        "trabajo" : {
+            "home": {
+                "title": "Trabajos",
+                "createLabel": "Créer un nouveau Trabajo",
+                "createOrEditLabel": "Créer ou éditer un Trabajo",
+                "search": "Search for Trabajo"
+            },
+            "created": "Un nouveau Trabajo a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Trabajo avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Trabajo avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Trabajo {{ id }} ?"
+            },
+            "detail": {
+                "title": "Trabajo"
+            },
+            "asunto": "Asunto",
+            "descripcion": "Descripcion",
+            "fecha": "Fecha",
+            "visible": "Visible",
+            "abierto": "Abierto",
+            "tecnico": "Tecnico"
+        }
+    }
+}
+

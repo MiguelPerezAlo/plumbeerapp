@@ -1,0 +1,68 @@
+<div>
+    <h2 translate="plumbeerappApp.trabajo.home.title">Trabajos</h2>
+    <jh-alert></jh-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="trabajo.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span 
+                        translate="plumbeerappApp.trabajo.home.createLabel">Create new Trabajo
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="plumbeerappApp.trabajo.asunto">Asunto</span></th>
+                    <th><span translate="plumbeerappApp.trabajo.descripcion">Descripcion</span></th>
+                    <th><span translate="plumbeerappApp.trabajo.fecha">Fecha</span></th>
+                    <th><span translate="plumbeerappApp.trabajo.visible">Visible</span></th>
+                    <th><span translate="plumbeerappApp.trabajo.abierto">Abierto</span></th>
+                    <th><span translate="plumbeerappApp.trabajo.tecnico">tecnico</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="trabajo in trabajos track by trabajo.id">
+                    <td><a ui-sref="trabajo.detail({id:trabajo.id})">{{trabajo.id}}</a></td>
+                    <td>{{trabajo.asunto}}</td>
+                    <td>{{trabajo.descripcion}}</td>
+                        <td>{{trabajo.fecha | date:'mediumDate'}}</td>
+                    <td>{{trabajo.visible}}</td>
+                    <td>{{trabajo.abierto}}</td>
+                    <td>
+                        {{trabajo.tecnico.id}}
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="trabajo.detail({id:trabajo.id})"
+                                    class="btn btn-info btn-sm"> 
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="trabajo.edit({id:trabajo.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="trabajo.delete({id:trabajo.id})"
+                                    class="btn btn-danger btn-sm">                                    
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "baseName": "PlumbeerApp",
+    "packageName": "plumbeer.app.development",
+    "packageFolder": "plumbeer/app/development",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "useSass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": true,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "f43acbfaf3afbcfea04349ec415efb48f0977792",
+    "testFrameworks": [
+      "gatling"
+    ]
+  }
+}
